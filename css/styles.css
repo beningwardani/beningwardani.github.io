@@ -1,0 +1,310 @@
+footer{
+  background-color: 191970;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid black;
+}
+
+#playButton{
+  position: absolute;
+  margin: 0 auto;
+}
+
+#contact-form{
+  background-color: white; 
+  width:600px;
+  padding:20px;
+  margin: auto;  
+  -moz-border-radius:15px;
+  border-radius:15px;
+  position:relative;
+}
+
+#contact-form input{
+  border: 2px solid #191970;
+  width:100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#contact-form h1{
+  font-family: Georgia, sans-serif,
+  color:;
+}
+
+#submit-button{
+  font-size: 20px;
+  font-weight:bold;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: #191970;
+  color: white;
+  font-size: georgia;
+}
+
+@font-face {
+  font-family: FontAwesome;
+  src: url(https://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.eot?#iefix) format('eot'), url(https://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.woff) format('woff'), url(https://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.ttf) format('truetype'), url(https://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.svg#FontAwesome) format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo {
+  padding: 10px;
+  color: #191970;
+  font-family: Georgia, sans-serif;
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+.menu {
+  position: absolute;
+  padding: 30px 0;
+  font-size: 2em;
+  top: 0;
+  right: 2%;
+  z-index: 10000;
+  transition: all 0.4s ease;
+}
+
+.menu a {
+  font-size: 1em;
+  text-decoration: none;
+  font-family: FontAwesome;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.menu a:before {
+  content: '\f0c9';
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  transition: all 0.4s ease;
+  z-index: 999;
+}
+
+header.sticky {
+  height: 60px;
+}
+
+body {
+  background: #ffffff;
+  height: 1500px;
+}
+
+
+/* THIS IS CSS - Styles I add to the website */
+
+
+.logo{
+  font-family: Georgia, serif;
+  text-decoration-style: none;
+  text-decoration-line: none;
+}
+
+.container{
+	text-align:center;
+}
+.img450 {
+	width:100%;
+	margin:8px 0;
+}
+h3, p{
+	text-align: left;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    margin-top: 60px;
+}
+.row{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nopad{
+}
+
+.logo1-fixed {
+  position: fixed;
+  top: -($nav-height);
+}
+
+.myTopnav{
+  text-align: center;
+}
+
+h2 { 
+   position: absolute; 
+   top: 20px; 
+   left: 40px; 
+   width: 100%;
+    
+}
+p  span{ 
+   color:#ffffff;
+   position: absolute; 
+   top: 50%; 
+   margin-top:-50px;
+   left: 50%;
+   margin-left:-40%;
+   height: 100px;
+   width: 80%;
+   opacity: 0;
+   background-color: rgba(000, 0, 0, 0.8);
+   transition: 1s ease opacity;
+   text-align: center;
+   line-height: 30px;
+   padding: 1%
+   
+ }
+h2 span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgba(0, 0, 0, 0.7);
+   opacity: 1;
+   padding: 10px; 
+   transition: 1s ease opacity;
+}
+
+.imagetext:hover p span {opacity: 1;} 
+.imagetext:hover h2 span {opacity: 0;}
+
+/* .row > p:hover {opacity: 1;} */
+
+/* THIS IS CSS - Float the list items side by side */
+ul.topnav li{
+text-align: center;
+display: inline;
+}
+
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: black;
+    font-family: Georgia, serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+ 
+  }
+}
+ul.topnav li a:hover {color: #003366;}
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+    background-color:white;
+  }
+ul.topnav {
+	background-color: white;
+}
+}
+
+/* MEDIA QUERY - The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+  .logo{
+    float:left;
+    background-color: #191970;
+    color:#ffffff;
+    background-position: cover;
+  }
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
+}
