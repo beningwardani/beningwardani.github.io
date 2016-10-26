@@ -1,3 +1,7 @@
+
+$(function(){
+
+
 $(window).scroll(function() {
 
   if ($(this).scrollTop() > 1) {
@@ -16,6 +20,34 @@ $(window).scroll(function() {
     $('.logo').css('color', '#191970');
     $('.logo').css('background-color', '#FFFFFF');
   }
+
+
+});
+
+
+$('#topnewsbutton').click(function(){
+    $('.allnews').show();
+});
+
+$('#musicbutton').click(function(){
+    $('.allnews').hide();
+    $('.musicNews').show();
+});
+
+$('#dramabutton').click(function(){
+    $('.allnews').hide();
+    $('.dramaNews').show();
+});
+
+$('#rumourbutton').click(function(){
+    $('.allnews').hide();
+    $('.rumourNews').show();
+});
+
+$('#netizensbutton').click(function(){
+    $('.allnews').hide();
+    $('.netizensNews').show();
+});
 
 
 });

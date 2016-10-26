@@ -1,13 +1,66 @@
+.blogPara{
+  padding:0 auto;
+  padding-left: 50px;
+  padding-right: 100px;
+}
+
+.blogImages{
+  width:100%;
+  margin:8px 0;
+  background-position: cover;
+}
+
+first-letter {
+  font-weight: bold;
+  color: red;
+}
+
+#playButton{
+  position: absolute;
+  top:20%;
+  left:30%;
+}
+
+h1 {
+  color:191970;
+}
+
+h6{
+  font-size: 16px;
+  line-height:24px;
+  color:#fc3565;
+}
+
+h6 span{
+  color:191970;
+  float:right;
+}
+
+p {
+  line-height: 24px;
+  margin: 24px 0;
+  color:#bbbbc4;
+}
+
+.newsCategories{
+text-align: center;
+margin-right: 33px;
+}
+
+
+.newsCategories li{
+display: inline-block;
+border-style: solid;
+color: 191970;
+padding: 10px;
+margin: 0 auto;
+}
+
 footer{
   background-color: 191970;
   text-align: center;
   padding: 20px;
   border-top: 2px solid black;
-}
-
-#playButton{
-  position: absolute;
-  margin: 0 auto;
 }
 
 #contact-form{
@@ -104,6 +157,9 @@ body {
 
 /* THIS IS CSS - Styles I add to the website */
 
+.alignnone{
+  margin-bottom: 20px;
+}
 
 .logo{
   font-family: Georgia, serif;
@@ -117,6 +173,8 @@ body {
 .img450 {
 	width:100%;
 	margin:8px 0;
+  background-position: cover;
+
 }
 h3, p{
 	text-align: left;
@@ -156,14 +214,14 @@ h2 {
    width: 100%;
     
 }
-p  span{ 
+.imagetext p  span{ 
    color:#ffffff;
    position: absolute; 
    top: 50%; 
    margin-top:-50px;
    left: 50%;
    margin-left:-40%;
-   height: 100px;
+   height: 150px;
    width: 80%;
    opacity: 0;
    background-color: rgba(000, 0, 0, 0.8);
@@ -185,6 +243,8 @@ h2 span {
 
 .imagetext:hover p span {opacity: 1;} 
 .imagetext:hover h2 span {opacity: 0;}
+#playButton:hover img {opacity: 1;}
+#playButton img {opacity: 0;}
 
 /* .row > p:hover {opacity: 1;} */
 
